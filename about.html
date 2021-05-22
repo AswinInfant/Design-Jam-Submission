@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boosted</title>
+  <link rel = "icon" href =  "logo1.png" type = "image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="st2.css">
+
+<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="http://fonts.cdnfonts.com/css/valentine-soul" rel="stylesheet">
+<style>
+  *{
+    box-sizing: border-box;
+  }
+body {
+  margin: 0;
+  font-family:Candara;
+  background-color: white;
+   justify-content: center;
+   color:black;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+section{
+  height: 85px;
+}
+.mySlides {display:none;}
+.topnav a.active1{
+  color:#4f1e05;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  
+<a href="#" class="lo"><img src="logo9.png"  style="width:100px" ></a>
+   <a href="gallery.html" >Gallery</a>
+  <a href="locations.html" >Locations</a>
+  <a href="menu.html">Menu</a>
+  <a href="#" class="active1">About</a>
+  <a href="index.html"  >Home</a>
+  <a style="font-size:30px;cursor:pointer" class="icon" onclick="openNav()">&#9776; </a>
+  </a>
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html" onclick="closeNav()">Home</a>
+    <a href="#" onclick="closeNav()">About</a>
+    <a href="menu.html" onclick="closeNav()">Menu</a>
+    <a href="locations.html" onclick="closeNav()">Locations</a>
+    <a href="gallery.html" onclick="closeNav()">Gallery</a>
+  </div>
+</div>
+<div class="gap" style="height: 80px;"></div>
+
+
+<div class="front">
+<div class="w3-content" style="max-width: 800px;padding: 0px;">
+  <img class="mySlides" src="back21.jpg" style="width:100%;">
+  <img class="mySlides" src="back12.jpg" style="width:100%">
+  <img class="mySlides" src="back6.jpg" style="width:100%;">
+
+  <div class="w3-row-padding w3-section" style="padding: 0px;width:100%; ">
+    <div class="w3-col s4" style="padding-left: 5px;">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="back21.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4" style="padding-left: 5px;">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="back12.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4" style="padding-left: 5px;">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="back6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="story">
+
+<p>The Donutery Story</p>
+
+<div class="home " id="home">
+ 
+<div class="box " >
+  <img class="storyimg"src="gal16.jpg" style="width:50%">
+    
+  </div>
+ <div class="box " >
+<h1 style="font-size: 36px;">2016</h1>
+  <p class="abtleft">Our story begins with a small kitchen<br> in our backyard where we tested our<br> culinary skills and found passion in doughnuts.<br>As we worked to create the most innovative<br>and delicious doughnuts around, we invited<br>friends and family to weekly taste-test gatherings<br>and shared fresh doughnuts with our neighbours.</p>
+ 
+
+  </div>
+  
+</div>
+
+<div class="home reveal" id="home">
+  <div class="box " >
+ 
+    <h1 style="text-align: right; font-size: 36px;">2018</h1>
+  <p class="abtright">Our flagship franchise opened in Dec 2018<br>setting the stage for our community-driven brand<br> dedicated to the freshest doughnuts and absolute<br> best customer service. As we expanded our<br>franchise, we brought with us our<br>core values of quality, connection & delight.
+</p>
+  </div>
+<div class="box " >
+  <img class="storyimg"src="gal4.jpg" style="width:50%">
+  </div>
+
+  
+</div>
+
+
+<div class="home reveal" id="home">
+ 
+<div class="box " >
+  <img class="storyimg"src="gal2.jpg" style="width:50%">
+    
+  </div>
+ <div class="box " >
+<h1 style="font-size: 36px;">2019</h1>
+  <p class="abtleft">Over the years, we built upon our mission<br>to always create places where people<br>could connect and experience the delight <br>of our doughnuts. And now we are on a mission<br>to spread our word of Doughnuts, so that<br>everyone can experience the love<br>and taste of our Doughnuts</p>
+ 
+
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+<div class="timeline-section reveal" id ="time">
+  <h1>Crafting Fresh Doughnuts!</h1>
+
+<div class="home reveal1" id="home">
+  <div class="box " >
+ 
+
+  <p class="abtright">Here at The Donutery, we infuse an exciting, soulful<br>energy into the art of doughnut making,<br> and stand by our commitment to serve<br> Fresh Doughnuts!We believe that the only <br> way to enjoy a doughnut is hot and fresh,<br> paired with the perfect cup of coffee, <br>and served with a smile.
+</p>
+  </div>
+<div class="box " >
+  <img src="abt1.png" style="width:100%">
+    
+  </div>
+
+  
+</div>
+<div class="home reveal" id="home">
+ 
+<div class="box " >
+  <img src="abt3.png" style="width:100%">
+    
+  </div>
+ <div class="box " >
+
+  <p class="abtleft">We make our doughnuts daily, from scratch,<br> using only the finest ingredients possible,<br> and prepare as much as we can in house. <br>Our team works day in and day out, <br>mixing and rolling out hand-crafted dough, <br>standing over simmering pots of <br>fruit purees and sizzling pans of chocolate, <br>and whipping up fresh creams and custards. </p>
+ 
+
+  </div>
+  
+</div>
+<div class="home reveal1" id="home">
+ 
+ <div class="box " >
+
+  <p class="abtright">We fry in small batches all day long,<br>guaranteeing each customer a fresh-out-of-<br>the-fryer treat. From the moment you step<br>into one of our shops and bite into one of our<br>hand-crafted doughnuts, you’ll surely agree<br>that Donutery is not your ordinary<br>doughnut experience!
+
+ </p>
+ 
+
+  </div>
+ <div class="box " >
+  <img src="abt2.png" style="width:100%">
+    
+  </div>
+ 
+  
+</div>
+
+</div>
+<div class="gap" style="height: 40px;"></div>
+<div class="msg">
+  <p>We can't wait to share our <span class="curv"> delicious</span>doughnuts and coffee<br>with you soon!</p>
+</div>
+
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        
+        <img src="logo9.png"  style="width:100px" >
+        <h1></h1>
+
+        <p class="footer-company-name">The Donutery © 2020</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>404, Friends Avenue</span>Anna Nagar, Chennai</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>9677715667</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ashinfant@gmail.com" style="color: #b77e60">mail@donutery.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Built  in 2018, ‘The Donutery' is a small autonomous business kept running by graduate students who had passion in culinery.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+         <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+<script>
+  
+function openNav() {
+  document.getElementById("myNav").style.width = "25%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+
+window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        
+      }
+    }
+    window.addEventListener('scroll', reveal1);
+ function reveal1(){
+      var reveals1 = document.querySelectorAll('.reveal1');
+
+      for(var i = 0; i < reveals1.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals1[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals1[i].classList.add('active');
+        }
+        
+      }
+    }
+
+</script>
+</body>
+</html>

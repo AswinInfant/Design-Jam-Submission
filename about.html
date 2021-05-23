@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Donutery | About</title>
-  <link rel = "icon" href =  "logo9.png" type = "image/x-icon">
+  <title>Boosted</title>
+  <link rel = "icon" href =  "logo1.png" type = "image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
    <link rel="stylesheet" href="st2.css">
@@ -39,7 +39,8 @@ section{
 </head>
 
 
-<body>
+<body onload="myFunction()">
+<div id="loading"></div>
 
 <div class="topnav" id="myTopnav">
   
@@ -246,6 +247,11 @@ section{
     </footer>
 
 <script>
+  
+  var preloader = document.getElementById("loading");
+function myFunction(){
+      preloader.style.display = 'none';
+    };
   
 function openNav() {
   document.getElementById("myNav").style.width = "25%";

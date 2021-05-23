@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Donutery | Gallery</title>
-  <link rel = "icon" href =  "logo9.png" type = "image/x-icon">
+  <title>Boosted</title>
+  <link rel = "icon" href =  "logo1.png" type = "image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
    <link rel="stylesheet" href="st4.css">
@@ -38,7 +38,8 @@ section{
 </head>
 
 
-<body>
+<body onload="myFunction()">
+<div id="loading"></div>
 
 <div class="topnav" id="myTopnav">
   
@@ -73,7 +74,7 @@ section{
     <img src="back1.jpg">
     
   </div>
-  <div class="card">
+ <div class="card">
     <img src="back11.jpg">
     
   </div>
@@ -96,7 +97,7 @@ section{
     
   </div>
   <div class="card">
-    <img src="gal3.jpg">
+    <img src="gal3.JPG">
     
   </div>
   <div class="card">
@@ -118,7 +119,7 @@ section{
     
   </div>
   <div class="card">
-    <img src="back21.jpg">
+    <img src="back21.JPG">
     
   </div>
   <div class="card">
@@ -140,7 +141,7 @@ section{
     
   </div>
   <div class="card">
-    <img src="gal8.jpg">
+    <img src="gal8.JPG">
     
   </div>
   <div class="card">
@@ -162,7 +163,7 @@ section{
     
   </div>
   <div class="card">
-    <img src="gal13.jpg">
+    <img src="gal13.JPG">
     
   </div>
   <div class="card">
@@ -226,6 +227,11 @@ section{
     </footer>
 
 <script>
+  
+  var preloader = document.getElementById("loading");
+function myFunction(){
+      preloader.style.display = 'none';
+    };
   
 function openNav() {
   document.getElementById("myNav").style.width = "25%";

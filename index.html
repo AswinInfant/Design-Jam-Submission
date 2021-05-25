@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Donutery | Home</title>
+  <title>Boosted</title>
   <link rel = "icon" href =  "logo9.png" type = "image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
   *{
     box-sizing: border-box;
@@ -28,7 +29,7 @@ html {
 
 
 section{
-  height: 100px;
+  height: 90px;
 }
 .mySlides {display:none;}
 .topnav a.active1{
@@ -66,35 +67,15 @@ section{
 </div>
 <section id="1"></section>
 <div class="front">
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  
-  <img src="back1.jpg" style="width:100%">
-  
+<div class="w3-content w3-section fade">
+  <img class="mySlides fade" src="back1.jpg" style="width:100%">
+  <img class="mySlides fade" src="back2.jpg" style="width:100%">
+  <img class="mySlides fade" src="back11.jpg" style="width:100%">
 </div>
 
-<div class="mySlides fade">
-  
-  <img src="back2.jpg" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="back11.jpg" style="width:100%">
-  
-</div>
 
 </div>
-<br>
-<div style="text-align:center">
- <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-</div>
-<div class="gap" style="height: 60px;"></div>
+
 
 <div class="find ">
 
@@ -196,28 +177,28 @@ section{
   <div class="slider__inner">
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">I would highly recommend The Donutery to anyone. Your most tasty doughnuts were at the center of attention on our holiday table! How great they were, we didn't notice how they disappeared... Thanks a lot!</p>
-      <h2 class="slider__caption">John Doe | Chennai</h2>
+      <p class="slider__txt">Some random comments about the service provided. Feedback and their success stories.Some random comments about the service provided. Feedback and their success stories.</p>
+      <h2 class="slider__caption">Rhonda | NylonCraft</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">Chennai's best doughnuts? It’s a dough-brainer..</p>
-      <h2 class="slider__caption">Jane Ross | Chennai</h2>
+      <p class="slider__txt">YSome random comments about the service provided. Feedback and their success stories.</p>
+      <h2 class="slider__caption">Jared | Rexam</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">It's awesome having The Donutery deliver every friday about evening to our office. Busy as all of us here, we enjoyed pulling into the drive way and seeing that the delivery has arrived.</p>
-      <h2 class="slider__caption">Karthik | Chennai</h2>
+      <p class="slider__txt">Some random comments about the service provided. Feedback and their success stories.Some random comments about the service provided. Feedback and their success stories.</p>
+      <h2 class="slider__caption">Chris | C&M Fine Pack</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">I would highly recommend The Donutery to anyone. Your most tasty doughnuts were at the center of attention on our holiday table!</p>
-      <h2 class="slider__caption">Pranav | Bangalore</h2>
+      <p class="slider__txt">Some random comments about the service provided. Feedback and their success stories.</p>
+      <h2 class="slider__caption">Rex | LNP Engineering Plastics</h2>
     </div>
     <div class="slider__contents">
       <quote>&rdquo;</quote>
-      <p class="slider__txt">Want to enjoy with your friends on a special occasion, visit The Donutery for an absolute treat.</p>
-      <h2 class="slider__caption">Kumar | Chennai</h2>
+      <p class="slider__txt">PSome random comments about the service provided. Feedback and their success stories.Some random comments about the service provided. Feedback and their success stories.</p>
+      <h2 class="slider__caption">Darlene | Russel Stover</h2>
     </div>
 
   </div>
@@ -290,32 +271,22 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var myIndex = 0;
+carousel();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function carousel() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+
 
 window.addEventListener('scroll', reveal);
 

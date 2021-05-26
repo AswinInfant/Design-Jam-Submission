@@ -408,13 +408,13 @@ box-shadow:0 0 40px #818181;
   font-size: 14px;
   color: #111;
   opacity: .5;
-  font-family: 'Roboto';
+  
   font-weight: bold;
 }
 .slider__txt {
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Roboto';
+ 
   line-height: 1.7;
   color: #b77e60;
   margin-top: -20px;
@@ -422,7 +422,7 @@ box-shadow:0 0 40px #818181;
   max-width: 750px;
 }
 quote {
-  font-family: 'Arial';
+
   font-weight: bold;
   font-size: 100px;
   background: -webkit-linear-gradient(#b77e60 0%, #000000 100%);
